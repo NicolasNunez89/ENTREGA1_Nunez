@@ -1,0 +1,26 @@
+{% extends "./padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+<h1>Titulo de la Web</h1>
+
+{% if Profesor %}
+
+    <p>El docente buscado es: {{legajo}}</p>
+
+    <ul>
+	{% for profesor in Profesor %}
+		<li> {{profesor.nombre}} </li>
+		<li> {{profesor.apellido}} </li>
+        <li> {{profesor.email }} </li>
+        <li> {{profesor.profesion }} </li>
+        <li> {{profesor.legajo }} </li>
+	{% endfor %}
+
+    </ul>
+
+    {% endif %}
+
+{% endblock %}

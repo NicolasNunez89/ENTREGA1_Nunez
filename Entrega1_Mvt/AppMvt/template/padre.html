@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        {% load static %}
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Inicio</title>
+    </head>
+
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-light bg-light static-top">
+            <div class="container">
+                <a class="navbar-brand" href="{% url 'Inicio' %}">Inicio</a>´
+                <a class="navbar-brand" href="{% url 'Profesores' %}">Profesores</a>
+                <a class="navbar-brand" href="{% url 'Estudiantes' %}">Estudiantes</a>
+                <a class="navbar-brand" href="{% url 'Entregables' %}">Entregables</a>
+            </div>
+        </nav>
+<!-- Masthead-->
+<header class="masthead">
+    <div class="container position-relative">
+        <div class="row justify-content-center">
+            <div class="col-xl-6">
+                <div class="text-center text-white">
+                    <!-- Page heading-->
+                    <h1 class="mb-5">Entregable 1 Web Django curso Python</h1>
+                    <!-- Signup form-->
+                    <!-- * * * * * * * * * * * * * * *-->
+                    <!-- * * SB Forms Contact Form * *-->
+                    <!-- * * * * * * * * * * * * * * *-->
+                    <!-- This form is pre-integrated with SB Forms.-->
+                    <!-- To make this form functional, sign up at-->
+                    <!-- https://startbootstrap.com/solution/contact-forms-->
+                    <!-- to get an API token!-->
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+        <!-- Esto es lo que va a cambiar-->
+
+        {% block contenidoQueCambia %}
+
+        {% endblock %}
+    </body>
+</html>
